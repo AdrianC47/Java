@@ -16,10 +16,11 @@ public class Seccion_3_Tipos_Primitivos {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+       /*
         /*
             Tipos primitivos enteros: byte, short, int, long
         
-        */ 
+        /*
         //Los datos de tipo byte pueden almacenar unicamente 8 bits
                             //aqui le digo que me transforme el 129 a byte
         byte numeroByte = (byte)129;// no imprime lo que quiero ya que los datos de tipo byte tienen rango de -128 a 127
@@ -33,7 +34,7 @@ public class Seccion_3_Tipos_Primitivos {
         System.out.println("numeroShort = " + numeroShort);
         System.out.println("valor minimo short: "+ Short.MIN_VALUE);
         System.out.println("valora maximo short: " +Short.MAX_VALUE);
-        
+       
         //Los datos de tipo int pueden almacenar unicamente hasta 32 bits
                          //aqui le digo que me transforme  el 2147483648L (la L es de Long) a int
         int numeroInt = (int)2147483648L; // no imprime lo que quiero ya que los datos de tipo int tienen rango de -2147483648 a 2147483647
@@ -43,11 +44,23 @@ public class Seccion_3_Tipos_Primitivos {
         
        //Los datos de tipo Long pueden almacenar unicamente hasta  64 bits
  
-                        
+          /*              
         long numeroLong = (long)9223372036854775807L; 
         System.out.println("numeroLong = " + numeroLong);
         System.out.println("valor minimo long: "+ Long.MIN_VALUE);
         System.out.println("valora maximo long: " +Long.MAX_VALUE);
+        
+         */
+       //TIPOS PRIMITIVOS FLOTANTES
+       float numeroFloat = (float)3.4028235E38D;
+       System.out.println("numeroFloat = " + numeroFloat);
+       System.out.println("valor minimo float: "+ Float.MIN_VALUE);
+       System.out.println("valora maximo float: " +Float.MAX_VALUE);
+       
+       double numeroDouble = 1.7976931348623157E308;
+       System.out.println("numeroDouble = " + numeroDouble);
+       System.out.println("valor minimo double: "+ Double.MIN_VALUE);
+       System.out.println("valora maximo double: " +Double.MAX_VALUE);
     }
     
     
