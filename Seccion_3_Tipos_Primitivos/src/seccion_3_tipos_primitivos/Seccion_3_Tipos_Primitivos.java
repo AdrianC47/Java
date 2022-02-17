@@ -16,7 +16,7 @@ public class Seccion_3_Tipos_Primitivos {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-       /*
+        /*
         /*
             Tipos primitivos enteros: byte, short, int, long
         
@@ -50,7 +50,7 @@ public class Seccion_3_Tipos_Primitivos {
         System.out.println("valor minimo long: "+ Long.MIN_VALUE);
         System.out.println("valora maximo long: " +Long.MAX_VALUE);
         
-         */
+        
        //TIPOS PRIMITIVOS FLOTANTES
        float numeroFloat = (float)3.4028235E38D;
        System.out.println("numeroFloat = " + numeroFloat);
@@ -61,8 +61,16 @@ public class Seccion_3_Tipos_Primitivos {
        System.out.println("numeroDouble = " + numeroDouble);
        System.out.println("valor minimo double: "+ Double.MIN_VALUE);
        System.out.println("valora maximo double: " +Double.MAX_VALUE);
+         */
+        
+        var numeroEntero = 10;
+        System.out.println("numeroEntero = " + numeroEntero);
+        
+        var numeroDouble = 10.0;
+        System.out.println("numeroDouble = " + numeroDouble);
+    
+        var numeroFloat = 10.0F;
+        System.out.println("numeroFloat = " + numeroFloat);
     }
-    
-    
-    
+
 }
