@@ -61,7 +61,7 @@ public class Seccion_3_Tipos_Primitivos {
        System.out.println("numeroDouble = " + numeroDouble);
        System.out.println("valor minimo double: "+ Double.MIN_VALUE);
        System.out.println("valora maximo double: " +Double.MAX_VALUE);
-         */
+
         
         var numeroEntero = 10;
         System.out.println("numeroEntero = " + numeroEntero);
@@ -71,6 +71,50 @@ public class Seccion_3_Tipos_Primitivos {
     
         var numeroFloat = 10.0F;
         System.out.println("numeroFloat = " + numeroFloat);
+
+  
+        char miCaracter = 'a';
+        System.out.println("miCaracter = " + miCaracter);
+        
+        char varChar = '\u0021'; //son caracteres unicode, el ! es el 0021 en la lista unicode
+        System.out.println("varChar = " + varChar);
+
+        char varCharDecimal = 33; // son caracteres decimales , para el ! es el 33 en la lista unicode
+        System.out.println("varCharDecimal = " + varCharDecimal);
+    
+        char varCharSimbolo = '!'; // tambien si esta en la lista se puede mandar directamente
+        System.out.println("varCharSimbolo = " + varCharSimbolo);
+
+        var varChar1 = '\u0021'; //son caracteres unicode, el ! es el 0021 en la lista unicode
+        System.out.println("varChar1 = " + varChar1);
+
+        var varCharDecimal1 = 33; // son caracteres decimales , para el ! es el 33 en la lista unicode
+        System.out.println("varCharDecimal1 = " + varCharDecimal1);
+    
+        var varCharSimbolo1 = '!'; // tambien si esta en la lista se puede mandar directamente
+        System.out.println("varCharSimbolo1 = " + varCharSimbolo1);
+    
+        int variableEnteraSimbolo = '!';
+        System.out.println("variableEnteraSimbolo = " + variableEnteraSimbolo);
+    
+        int letra = 'A';
+        System.out.println("letra = " + letra);
+       */
+        boolean varBoolean = true;
+        System.out.println("varBoolean = " + varBoolean);
+        if (varBoolean){ // esto es lo mismo que preguntar si es verdadero
+            System.out.println("La bandera es verdadera");
+        } else {
+            System.out.println("La bandera es falsa");
+        }
+        
+        var edad = 10;
+        //var esAdulto = edad >= 18;
+        if (edad >= 18){
+            System.out.println("Eres mayor de edad");
+        } else {
+            System.out.println("Eres menor de edad");
+        }
     }
 
 }
