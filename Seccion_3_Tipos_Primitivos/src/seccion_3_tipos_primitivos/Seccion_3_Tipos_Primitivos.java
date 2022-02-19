@@ -5,6 +5,8 @@
  */
 package seccion_3_tipos_primitivos;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Adrian
@@ -99,7 +101,7 @@ public class Seccion_3_Tipos_Primitivos {
     
         int letra = 'A';
         System.out.println("letra = " + letra);
-       */
+      
         boolean varBoolean = true;
         System.out.println("varBoolean = " + varBoolean);
         if (varBoolean){ // esto es lo mismo que preguntar si es verdadero
@@ -115,6 +117,35 @@ public class Seccion_3_Tipos_Primitivos {
         } else {
             System.out.println("Eres menor de edad");
         }
+        
+        
+        //Convertir tipo String a tipo int
+        var edad = Integer.parseInt("20");
+        //var edad = "20";
+        System.out.println("edad = " + (edad+1));
+    
+        var valorPI = Double.parseDouble("3.1416");
+        System.out.println("valorPI = " + valorPI);
+    
+        // Pedir un valor
+        var consola = new Scanner(System.in);
+        System.out.println("Proporciona tu edad");
+        edad = Integer.parseInt(consola.nextLine());
+        System.out.println("edad = " + edad);
+         */
+        //Covertir de tipo int a tipo String
+        
+        var edadTexto = String.valueOf(10);
+        System.out.println("edadTexto = " + edadTexto);
+        
+        var caracter = "hola".charAt(1);
+        System.out.println("caracter = " + caracter);
+        System.out.println("Proporciona un caracter");
+        var entrada = new Scanner(System.in);
+        caracter = entrada.nextLine().charAt(0);
+        System.out.println("caracter = " + caracter);
+        
+        
     }
 
 }
