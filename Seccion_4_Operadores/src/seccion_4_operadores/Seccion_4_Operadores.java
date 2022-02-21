@@ -129,7 +129,7 @@ public class Seccion_4_Operadores {
         } else {
             System.out.println("Es menor de edad");
         }
-         */
+    
         var a = 8;
         var valorMinimo = 0;
         var valorMaximo = 10;
@@ -149,7 +149,13 @@ public class Seccion_4_Operadores {
         } else {
             System.out.println("El padre esta ocupado");
         }
-
+         */
+        var resultado = (1>2) ? "verdadero" : "falso" ;
+        System.out.println("resultado = " + resultado);
+    
+        var numero = 7;
+        resultado = (numero % 2 == 0)? "Es par" : "Es impar";
+        System.out.println("resultado = " + resultado);
     }
 
 }
