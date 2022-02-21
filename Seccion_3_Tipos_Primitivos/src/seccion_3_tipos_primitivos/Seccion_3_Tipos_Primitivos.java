@@ -59,6 +59,7 @@ public class Seccion_3_Tipos_Primitivos {
        System.out.println("valor minimo float: "+ Float.MIN_VALUE);
        System.out.println("valora maximo float: " +Float.MAX_VALUE);
        
+        //toma 32 bits
        double numeroDouble = 1.7976931348623157E308;
        System.out.println("numeroDouble = " + numeroDouble);
        System.out.println("valor minimo double: "+ Double.MIN_VALUE);
@@ -132,7 +133,7 @@ public class Seccion_3_Tipos_Primitivos {
         System.out.println("Proporciona tu edad");
         edad = Integer.parseInt(consola.nextLine());
         System.out.println("edad = " + edad);
-         */
+       
         //Covertir de tipo int a tipo String
         
         var edadTexto = String.valueOf(10);
@@ -145,7 +146,23 @@ public class Seccion_3_Tipos_Primitivos {
         caracter = entrada.nextLine().charAt(0);
         System.out.println("caracter = " + caracter);
         
-        
+         */
+
+        //Tarea 
+        Scanner entrada = new Scanner(System.in);
+        System.out.println("Proporciona el nombre:");
+        String nombre = entrada.nextLine();
+        System.out.println("nombre = " + nombre);
+        System.out.println("Proporciona el id:");
+        int id = Integer.parseInt(entrada.nextLine());
+        System.out.println("id = " + id);
+        System.out.println("Proporciona el precio:");
+        double precio = Double.parseDouble(entrada.nextLine());
+        System.out.println("precio = " + precio);
+        System.out.println("Proporciona el envio gratuito:");
+        boolean envioGratuito = Boolean.parseBoolean(entrada.nextLine());
+        System.out.println("envioGratuito = " + envioGratuito);
+ 
     }
 
 }
