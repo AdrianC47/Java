@@ -95,7 +95,7 @@ public class Seccion_4_Operadores {
         var l = k--;//primero se utiliza el varlo de la variable y luego se decrementa
         System.out.println("k = " + k);//teniamos pendiente un decremento
         System.out.println("l = " + l);
-         */
+        
         var a = 3;
         var b = 2;
 
@@ -129,6 +129,27 @@ public class Seccion_4_Operadores {
         } else {
             System.out.println("Es menor de edad");
         }
+         */
+        var a = 8;
+        var valorMinimo = 0;
+        var valorMaximo = 10;
+
+        var resultado = a >= 0 && a <= 10;
+        if (resultado) { // cuando se pone solo asi pregunta por defecto si es true
+            System.out.println("Dentro de rango");
+        } else {
+            System.out.println("Fuera de rango");
+        }
+
+        var vacaciones = false;
+        var diaDescanso = true;
+
+        if (vacaciones || diaDescanso) {
+            System.out.println("Padre puede asisitir al juego del hijo");
+        } else {
+            System.out.println("El padre esta ocupado");
+        }
+
     }
 
 }
