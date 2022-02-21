@@ -35,7 +35,7 @@ public class Seccion_4_Operadores {
         } else {
             System.out.println("Es numero impar");
         }
-         */
+     
         int a = 3, b = 2;
         int c = a + 5 - b;
         System.out.println("c = " + c);
@@ -60,6 +60,42 @@ public class Seccion_4_Operadores {
         a %= 2;//a = a % 2
         System.out.println("a = " + a);
 
+    */
+    //Operadores Unarios
+        var a = 3;
+        var b = -a;
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
+        var c = true;
+        var d = !c;
+        System.out.println("c = " + c);
+        System.out.println("d = " + d);
+    
+        //Incremento
+        //1.preincremento  (simbolo antes de la variable)
+        var e =3;
+        var f = ++e;//primero se incrementa  la variable y luego se usa su valor
+        System.out.println("e = " + e);
+        System.out.println("f = " + f);
+        //2.postincremento  (despues de la variable)
+        var g = 5;
+        var h = g++;//primero se utiliza el valor de la variable y luego se incrementa
+        System.out.println("g = " + g);//teniamos pendiente un incremento 
+        System.out.println("h = " + h);
+        
+        //Decremento
+        //1.predecremento
+        var i = 2;
+        var j = --i;//primero se decrementa la variable y luego se usa su valor
+        System.out.println("i = " + i);
+        System.out.println("j = " + j);
+    
+        //2.postdecremento 
+        var k =4;
+        var l = k--;//primero se utiliza el varlo de la variable y luego se decrementa
+        System.out.println("k = " + k);//teniamos pendiente un decremento
+        System.out.println("l = " + l);
     }
+    
 
 }
