@@ -113,6 +113,22 @@ public class Seccion_4_Operadores {
         var f = cadena.equals(cadena2);//comparamos contenido de cadenas
         System.out.println("f = " + f);
 
+        var g = a >= b;//mayor  que > o el mayor o igual >=
+        System.out.println("g = " + g);
+
+        if (a % 2 == 0) {
+            System.out.println("Es numero par");
+        } else {
+            System.out.println("Es numero impar");
+        }
+
+        var edad = 10;
+        var adulto = 18;
+        if (edad >= adulto) {
+            System.out.println("Es un adulto");
+        } else {
+            System.out.println("Es menor de edad");
+        }
     }
 
 }
