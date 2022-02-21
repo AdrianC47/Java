@@ -60,7 +60,7 @@ public class Seccion_4_Operadores {
         a %= 2;//a = a % 2
         System.out.println("a = " + a);
 
-    */
+   
     //Operadores Unarios
         var a = 3;
         var b = -a;
@@ -95,7 +95,24 @@ public class Seccion_4_Operadores {
         var l = k--;//primero se utiliza el varlo de la variable y luego se decrementa
         System.out.println("k = " + k);//teniamos pendiente un decremento
         System.out.println("l = " + l);
+         */
+        var a = 3;
+        var b = 2;
+
+        var c = (a == b);
+        System.out.println("c = " + c);
+
+        var d = a != b;
+        System.out.println("d = " + d);
+
+        var cadena = "Hola";
+        var cadena2 = "Hola";
+        var e = cadena == cadena2;//compara referencias de objetos
+        System.out.println("e = " + e);
+
+        var f = cadena.equals(cadena2);//comparamos contenido de cadenas
+        System.out.println("f = " + f);
+
     }
-    
 
 }
