@@ -149,12 +149,28 @@ public class Seccion_4_Operadores {
         } else {
             System.out.println("El padre esta ocupado");
         }
-         */
+        
         var resultado = (1>2) ? "verdadero" : "falso" ;
         System.out.println("resultado = " + resultado);
     
         var numero = 7;
         resultado = (numero % 2 == 0)? "Es par" : "Es impar";
+        System.out.println("resultado = " + resultado);
+         */
+        
+        var x = 5;
+        var y = 10;
+        var z = ++x + y--; //  6 + 10 
+        System.out.println("x = " + x);
+        System.out.println("y = " + y);
+        System.out.println("z = " + z);
+    
+        var resultado = 4 + 5 * 6 /3;//leyes de signos pero en java multiplicacion y division tienen misma prioridad
+                                     // sin embargo se va a realizar el que esté primero contando de izq a derecha
+                                     // 4 + ((5*6)/3)
+        System.out.println("resultado = " + resultado);
+        
+        resultado = (4 + 5) * 6 / 3;
         System.out.println("resultado = " + resultado);
     }
 
