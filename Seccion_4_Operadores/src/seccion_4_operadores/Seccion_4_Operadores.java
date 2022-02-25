@@ -194,7 +194,7 @@ public class Seccion_4_Operadores {
         Puedes utilizar el IDE de tu preferencia para codificar la solución y después pegar tu solución en esta herramienta.
 
  
-         */
+        
         int alto = 0;
         int ancho = 0;
         int area;
@@ -212,6 +212,7 @@ public class Seccion_4_Operadores {
         System.out.println(area);
         System.out.print("Perímetro: ");
         System.out.println(perimetro);
+         */
         //esta bien pero se puede simplificar a 
         /*
         Scanner scanner = new Scanner(System.in);
@@ -224,5 +225,51 @@ public class Seccion_4_Operadores {
         int perimetro = (alto + ancho) * 2;
         System.out.println("Area: " + area);
         System.out.println("Perimetro: " + perimetro);*/
+
+        //Segundo Ejercicio
+        //        Solicitar al usuario dos valores:
+        //
+        //numero1 (int)
+        //
+        //numero2 (int)
+        //
+        //Se debe imprimir el mayor de los dos números (la salida debe ser identica a la que sigue):
+        //
+        //Proporciona el numero1:
+        //Proporciona el numero2:
+        //El numero mayor es:
+        //<numeroMayor>
+        //Puedes utilizar el IDE de tu preferencia para codificar la solución y después pegar tu solución en esta herramienta.
+        //
+        //Preguntas de esta tarea
+        //¿Cuál es el código del requerimiento solicitado?
+        /*
+        int numero1, numero2, numeroMayor;
+        Scanner entrada = new Scanner(System.in);
+        System.out.println("Proporciona el numero 1: ");
+        numero1 = Integer.parseInt(entrada.nextLine());
+        System.out.println("Proporciona el numero 2: ");
+        numero2 = Integer.parseInt(entrada.nextLine());
+        System.out.println("El numero mayor es: ");
+        if (numero1 == numero2) {
+            System.out.println("Son numeros iguales");
+        } else {
+            if (numero1 > numero2) {
+                numeroMayor = numero1;
+                System.out.println(numeroMayor);
+            } else {
+                numeroMayor = numero2;
+                System.out.println(numeroMayor);
+            }
+        }
+         */
+        //Esta bien realizado el mio pero se puede simplificar usando operadores ternarios
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Proporciona el numero1:");
+        int numero1 = Integer.parseInt(scanner.nextLine());
+        System.out.println("Proporciona el numero2:");
+        int numero2 = Integer.parseInt(scanner.nextLine());
+        System.out.println("El numero mayor es:");
+        System.out.println(numero1 > numero2 ? numero1 : numero2);
     }
 }
