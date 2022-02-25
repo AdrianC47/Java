@@ -5,6 +5,8 @@
  */
 package seccion_4_operadores;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Adrian
@@ -156,7 +158,7 @@ public class Seccion_4_Operadores {
         var numero = 7;
         resultado = (numero % 2 == 0)? "Es par" : "Es impar";
         System.out.println("resultado = " + resultado);
-         */
+
         
         var x = 5;
         var y = 10;
@@ -172,6 +174,55 @@ public class Seccion_4_Operadores {
         
         resultado = (4 + 5) * 6 / 3;
         System.out.println("resultado = " + resultado);
-    }
+         
+        //Ejercicio 
+        //En el siguiente ejercicio se solicita calcular el área y el perímetro de un Rectángulo, para ello deberemos crear las siguientes variables:
+        alto (int)
+        ancho (int)
+        El usuario debe proporcionar los valores de largo y ancho, y después se debe imprimir el resultado en el siguiente formato
+        (no usar acentos y respetar los espacios, mayúsculas, minúsculas y saltos de línea):
+        Proporciona el alto:
+        Proporciona el ancho:
+        Area: <area>
+        Perimetro: <perimetro>
+        Las fórmulas para calcular el área y el perímetro de un Rectángulo son:
 
+        Área: alto * ancho
+
+        Perímetro: (alto + ancho) * 2
+
+        Puedes utilizar el IDE de tu preferencia para codificar la solución y después pegar tu solución en esta herramienta.
+
+ 
+         */
+        int alto = 0;
+        int ancho = 0;
+        int area;
+        int perimetro;
+        Scanner entrada = new Scanner(System.in);
+        System.out.println("Proporciona el alto: ");
+        alto = Integer.parseInt(entrada.nextLine());
+        System.out.println(alto);
+        System.out.println("Proporciona el ancho: ");
+        ancho = Integer.parseInt(entrada.nextLine());
+        System.out.println(ancho);
+        area = alto * ancho;
+        perimetro = (alto + ancho) * 2;
+        System.out.print("Área: ");
+        System.out.println(area);
+        System.out.print("Perímetro: ");
+        System.out.println(perimetro);
+        //esta bien pero se puede simplificar a 
+        /*
+        Scanner scanner = new Scanner(System.in);
+        // Escribe tu solucion aqui
+        System.out.println("Proporciona el alto:");
+        int alto = Integer.parseInt(scanner.nextLine());
+        System.out.println("Proporciona el ancho:");
+        int ancho = Integer.parseInt(scanner.nextLine());
+        int area = alto * ancho;
+        int perimetro = (alto + ancho) * 2;
+        System.out.println("Area: " + area);
+        System.out.println("Perimetro: " + perimetro);*/
+    }
 }
