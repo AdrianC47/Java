@@ -18,5 +18,20 @@ public class Sentencia {
         } else {
             System.out.println("Condicion Falsa");
         }
+
+        var numero = 99;
+        var numeroTexto = "Numero desconocido";
+        if (numero == 1) {
+            System.out.println(numeroTexto);
+        } else if (numero == 2) {
+            numeroTexto = "Numero 2";
+        } else if (numero == 3) {
+            numeroTexto = "Numero 3";
+        } else if (numero == 4) {
+            numeroTexto = "Numero 4";
+        } else {
+            numeroTexto = "Numero no encontrado";
+        }
+        System.out.println("numeroTexto = " + numeroTexto);
     }
 }
