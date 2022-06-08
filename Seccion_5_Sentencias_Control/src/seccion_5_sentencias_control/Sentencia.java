@@ -4,6 +4,8 @@
  */
 package seccion_5_sentencias_control;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Adrian
@@ -11,27 +13,46 @@ package seccion_5_sentencias_control;
 public class Sentencia {
 
     public static void main(String[] args) {
-        var condicion = false;
-        if (condicion) { // esto es lo mismo que condicion == true
-            System.out.println("Condicion Verdadera");
-            System.out.println("nueva linea");
-        } else {
-            System.out.println("Condicion Falsa");
-        }
+//        var condicion = false;
+//        if (condicion) { // esto es lo mismo que condicion == true
+//            System.out.println("Condicion Verdadera");
+//            System.out.println("nueva linea");
+//        } else {
+//            System.out.println("Condicion Falsa");
+//        }
+//
+//        var numero = 99;
+//        var numeroTexto = "Numero desconocido";
+//        if (numero == 1) {
+//            System.out.println(numeroTexto);
+//        } else if (numero == 2) {
+//            numeroTexto = "Numero 2";
+//        } else if (numero == 3) {
+//            numeroTexto = "Numero 3";
+//        } else if (numero == 4) {
+//            numeroTexto = "Numero 4";
+//        } else {
+//            numeroTexto = "Numero no encontrado";
+//        }
+//        System.out.println("numeroTexto = " + numeroTexto);
+        Scanner entrada = new Scanner(System.in);
+        System.out.println("Por favor ingrese el numero del mes ");
+        var  cadena = entrada.nextLine();
+        int mes = Integer.parseInt(cadena);
+        var estacion = "Estacion desconocida";
+        if (mes == 1 || mes == 2 || mes == 12) {
+            estacion = "Invierno";
 
-        var numero = 99;
-        var numeroTexto = "Numero desconocido";
-        if (numero == 1) {
-            System.out.println(numeroTexto);
-        } else if (numero == 2) {
-            numeroTexto = "Numero 2";
-        } else if (numero == 3) {
-            numeroTexto = "Numero 3";
-        } else if (numero == 4) {
-            numeroTexto = "Numero 4";
-        } else {
-            numeroTexto = "Numero no encontrado";
+        } else if (mes == 3 || mes == 4 || mes == 5) {
+            estacion = "Primavera";
+
+        } else if (mes == 6 || mes == 7 || mes == 8) {
+            estacion = "Verano";
+
+        } else if (mes == 9 || mes == 10 || mes == 11) {
+            estacion = "Otoño";
+
         }
-        System.out.println("numeroTexto = " + numeroTexto);
+        System.out.println("estacion = " + estacion);
     }
 }
