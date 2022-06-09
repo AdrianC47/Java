@@ -55,24 +55,44 @@ public class Sentencia {
 //        }
 //        System.out.println("estacion = " + estacion);
 
-        var numero = 66;
-        var numeroTexto = "Valor desconocido";
-        switch (numero) {
-            case 1:
-                numeroTexto = "Numero uno";
+//        var numero = 66;
+//        var numeroTexto = "Valor desconocido";
+//        switch (numero) {
+//            case 1:
+//                numeroTexto = "Numero uno";
+//                break;
+//            case 2:
+//                numeroTexto = "Numero dos";
+//                break;
+//            case 3:
+//                numeroTexto = "Numero tres";
+//                break;
+//            case 4:
+//                numeroTexto = "Numero cuatro";
+//                break;
+//            default: //esto es un else osea si no cumple ninguno de los anteriores casos
+//                numeroTexto= "Caso no encontrado";
+//        }
+//        System.out.println("numeroTexto = " + numeroTexto);
+        Scanner entrada = new Scanner(System.in);
+        System.out.println("Ingrese el dato del mes");
+        var mes = entrada.nextInt();
+        var estacion = "Estacion desconocida";
+        
+        switch (mes) {
+            case 1: case 2: case 12:
+                estacion = "Invierno";
                 break;
-            case 2:
-                numeroTexto = "Numero dos";
+            case 3: case 4: case 5:
+                estacion = "Primavera";
                 break;
-            case 3:
-                numeroTexto = "Numero tres";
+            case 6: case 7: case 8:
+                estacion = "Verano";
                 break;
-            case 4:
-                numeroTexto = "Numero cuatro";
+            case 9: case 10: case 11:
+                estacion = "Otoño";
                 break;
-            default: //esto es un else osea si no cumple ninguno de los anteriores casos
-                numeroTexto= "Caso no encontrado";
         }
-        System.out.println("numeroTexto = " + numeroTexto);
+        System.out.println("estacion = " + estacion);
     }
 }
