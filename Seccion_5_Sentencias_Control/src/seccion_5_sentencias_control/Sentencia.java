@@ -35,24 +35,44 @@ public class Sentencia {
 //            numeroTexto = "Numero no encontrado";
 //        }
 //        System.out.println("numeroTexto = " + numeroTexto);
-        Scanner entrada = new Scanner(System.in);
-        System.out.println("Por favor ingrese el numero del mes ");
-        var  cadena = entrada.nextLine();
-        int mes = Integer.parseInt(cadena);
-        var estacion = "Estacion desconocida";
-        if (mes == 1 || mes == 2 || mes == 12) {
-            estacion = "Invierno";
+//        Scanner entrada = new Scanner(System.in);
+//        System.out.println("Por favor ingrese el numero del mes ");
+//        var  cadena = entrada.nextLine();
+//        int mes = Integer.parseInt(cadena);
+//        var estacion = "Estacion desconocida";
+//        if (mes == 1 || mes == 2 || mes == 12) {
+//            estacion = "Invierno";
+//
+//        } else if (mes == 3 || mes == 4 || mes == 5) {
+//            estacion = "Primavera";
+//
+//        } else if (mes == 6 || mes == 7 || mes == 8) {
+//            estacion = "Verano";
+//
+//        } else if (mes == 9 || mes == 10 || mes == 11) {
+//            estacion = "Otoño";//se recomienda evitar el uso de ñ 
+//
+//        }
+//        System.out.println("estacion = " + estacion);
 
-        } else if (mes == 3 || mes == 4 || mes == 5) {
-            estacion = "Primavera";
-
-        } else if (mes == 6 || mes == 7 || mes == 8) {
-            estacion = "Verano";
-
-        } else if (mes == 9 || mes == 10 || mes == 11) {
-            estacion = "Otoño";
-
+        var numero = 66;
+        var numeroTexto = "Valor desconocido";
+        switch (numero) {
+            case 1:
+                numeroTexto = "Numero uno";
+                break;
+            case 2:
+                numeroTexto = "Numero dos";
+                break;
+            case 3:
+                numeroTexto = "Numero tres";
+                break;
+            case 4:
+                numeroTexto = "Numero cuatro";
+                break;
+            default: //esto es un else osea si no cumple ninguno de los anteriores casos
+                numeroTexto= "Caso no encontrado";
         }
-        System.out.println("estacion = " + estacion);
+        System.out.println("numeroTexto = " + numeroTexto);
     }
 }
