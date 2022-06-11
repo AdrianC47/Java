@@ -17,10 +17,13 @@ public class Ciclo {
 //            contador++;
 //        }
 
-          var contador = 0;
-          do {            
-              System.out.println("contador = " + contador);
-              contador++;
-          } while (contador <3);
+//          var contador = 0;
+//          do {            
+//              System.out.println("contador = " + contador);
+//              contador++;
+//          } while (contador <3);
+        for (var contador = 0; contador < 3; contador++) {
+            System.out.println("contador = " + contador);
+        }
     }
 }
