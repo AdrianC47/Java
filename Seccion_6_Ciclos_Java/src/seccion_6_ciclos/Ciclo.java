@@ -28,11 +28,21 @@ public class Ciclo {
 //                break;
 //            }
 //        }
+//        for (var contador = 0; contador < 3; contador++) {
+//            if (contador % 2 != 0) { //pregunto si el contador es impar
+//                continue; // ir a la siguiente iteracion
+//            }
+//            System.out.println("contador = " + contador);
+//        }
+        //Una etiqueta nos va a permitir indicar a las palabras continue o break ir hacia un lugar específico de nuestro programa, sin embargo no es muy recomendable
+        //usarla porque puede romper la logica de nuestro programa
+        inicio:
         for (var contador = 0; contador < 3; contador++) {
-            if(contador % 2 !=0){ //pregunto si el contador es impar
-                continue; // ir a la siguiente iteracion
+            if (contador % 2 != 0) { //ir a la linea de codigo de la etiqueta que hemos agregado
+                continue inicio; 
             }
             System.out.println("contador = " + contador);
         }
+
     }
 }
