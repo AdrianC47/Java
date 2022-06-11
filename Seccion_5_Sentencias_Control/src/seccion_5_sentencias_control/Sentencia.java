@@ -74,25 +74,41 @@ public class Sentencia {
 //                numeroTexto= "Caso no encontrado";
 //        }
 //        System.out.println("numeroTexto = " + numeroTexto);
+//        Scanner entrada = new Scanner(System.in);
+//        System.out.println("Ingrese el dato del mes");
+//        var mes = entrada.nextInt();
+//        var estacion = "Estacion desconocida";
+//        
+//        switch (mes) {
+//            case 1: case 2: case 12:
+//                estacion = "Invierno";
+//                break;
+//            case 3: case 4: case 5:
+//                estacion = "Primavera";
+//                break;
+//            case 6: case 7: case 8:
+//                estacion = "Verano";
+//                break;
+//            case 9: case 10: case 11:
+//                estacion = "Otoño";
+//                break;
+//        }
+//        System.out.println("estacion = " + estacion);
         Scanner entrada = new Scanner(System.in);
-        System.out.println("Ingrese el dato del mes");
-        var mes = entrada.nextInt();
-        var estacion = "Estacion desconocida";
-        
-        switch (mes) {
-            case 1: case 2: case 12:
-                estacion = "Invierno";
-                break;
-            case 3: case 4: case 5:
-                estacion = "Primavera";
-                break;
-            case 6: case 7: case 8:
-                estacion = "Verano";
-                break;
-            case 9: case 10: case 11:
-                estacion = "Otoño";
-                break;
+        System.out.println("Ingrese un valor");
+        int num = entrada.nextInt();
+        if (num >=9 && num <10) {
+            System.out.println("A");
+        } else if(num >=8 && num < 9){
+            System.out.println("B");
+        } else if (num >=7 && num <8){
+            System.out.println("C");
+        } else if(num >=6 && num <7){
+            System.out.println("D");
+        } else if(num >=0 && num <6){
+            System.out.println("F");
+        } else {
+            System.out.println("Valor desconocido");
         }
-        System.out.println("estacion = " + estacion);
     }
 }
