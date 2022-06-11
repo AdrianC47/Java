@@ -22,7 +22,16 @@ public class Ciclo {
 //              System.out.println("contador = " + contador);
 //              contador++;
 //          } while (contador <3);
+//        for (var contador = 0; contador < 3; contador++) {
+//            if(contador % 2 ==0){
+//                System.out.println("contador = " + contador);
+//                break;
+//            }
+//        }
         for (var contador = 0; contador < 3; contador++) {
+            if(contador % 2 !=0){ //pregunto si el contador es impar
+                continue; // ir a la siguiente iteracion
+            }
             System.out.println("contador = " + contador);
         }
     }
